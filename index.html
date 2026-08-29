@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Terra &amp; Clay - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-fixed-dim": "#c8c6c3",
+                      "primary-container": "#b8a99a",
+                      "surface-container": "#f4ede8",
+                      "secondary-container": "#e2dfdc",
+                      "surface": "#fff8f4",
+                      "on-secondary-fixed": "#1c1c1a",
+                      "surface-container-highest": "#e8e1dc",
+                      "on-secondary-fixed-variant": "#474745",
+                      "surface-container-lowest": "#ffffff",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed": "#231a0f",
+                      "tertiary-fixed": "#f1e0ce",
+                      "primary-fixed": "#f1e0cf",
+                      "inverse-surface": "#33302d",
+                      "on-surface": "#1e1b18",
+                      "inverse-on-surface": "#f7efea",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed": "#e5e2df",
+                      "outline": "#7e766d",
+                      "tertiary": "#695c4e",
+                      "tertiary-fixed-dim": "#d4c4b3",
+                      "inverse-primary": "#d4c4b4",
+                      "on-secondary-container": "#636260",
+                      "secondary": "#5f5e5c",
+                      "error-container": "#ffdad6",
+                      "primary": "#685c50",
+                      "on-primary-container": "#483e32",
+                      "surface-variant": "#e8e1dc",
+                      "surface-tint": "#685c50",
+                      "on-primary-fixed-variant": "#504539",
+                      "on-surface-variant": "#4d463e",
+                      "on-tertiary-container": "#493e31",
+                      "surface-container-high": "#eee7e2",
+                      "on-primary-fixed": "#221a10",
+                      "outline-variant": "#cfc5bb",
+                      "tertiary-container": "#b9a999",
+                      "on-error": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "surface-bright": "#fff8f4",
+                      "surface-dim": "#e0d9d4",
+                      "background": "#fff8f4",
+                      "primary-fixed-dim": "#d4c4b4",
+                      "on-background": "#1e1b18",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#504538",
+                      "surface-container-low": "#faf2ed",
+                      "on-tertiary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sm": "12px",
+                      "margin-desktop": "64px",
+                      "md": "24px",
+                      "gutter": "24px",
+                      "lg": "48px",
+                      "margin-mobile": "16px",
+                      "base": "8px",
+                      "xl": "80px",
+                      "xs": "4px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Noto Serif"
+                      ],
+                      "headline-lg": [
+                              "Noto Serif"
+                      ],
+                      "body-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Noto Serif"
+                      ],
+                      "label-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-lg": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg-mobile": [
+                              "Noto Serif"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+          .hide-scrollbar::-webkit-scrollbar {
+              display: none;
+          }
+          .hide-scrollbar {
+              -ms-overflow-style: none;
+              scrollbar-width: none;
+          }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-24 selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface text-primary dark:text-primary-fixed-dim docked full-width top-0 bg-surface dark:bg-surface flat no shadows flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base z-40 sticky">
+<button class="hover:text-primary transition-colors duration-200 opacity-80 transition-opacity p-2">
+<span class="material-symbols-outlined text-on-surface-variant dark:text-secondary-fixed-dim">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim tracking-tight">Terra &amp; Clay</h1>
+<button class="hover:text-primary transition-colors duration-200 opacity-80 transition-opacity p-2">
+<span class="material-symbols-outlined text-on-surface-variant dark:text-secondary-fixed-dim">shopping_bag</span>
+</button>
+</header>
+<main class="w-full max-w-[1280px] mx-auto overflow-x-hidden">
+<!-- Hero Section -->
+<section class="relative w-full h-[60vh] min-h-[400px] flex items-end pb-lg px-margin-mobile">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full -z-10 before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-t before:from-on-background/80 before:to-transparent" data-alt="A master potter's hands covered in wet clay shaping a tall, elegant vase on a spinning pottery wheel. The scene is bathed in warm, diffused natural sunlight streaming through a large studio window, creating a serene, earthy, and tactile minimalist aesthetic typical of a high-end artisanal workshop. The color palette focuses on soft terracotta, warm taupe, and creamy whites." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAKbvnjRyNM2jZKnDiaNWKw1iD9A1WcnWPwfpHpM51vUjDPkCAj8VAZOjE7vT8_DOQSistKm_3HXyrfpSJnsW0K4zn3KDkc3eDmRK74evoGX_BxwDmkHDLUgG8BKHHNzoEV_gS33Hg0sUtE5FrsxMX_eqNrlXWBlXOAp6PQbLDt7i5B5D4gr8B_kIvAuqrMLCLnHlweyciCdKC2mL1jnIVM2qDHvnqv7BVzdc9r7ZhtGhD2anfVttQs1g')"></div>
+<div class="relative z-10 w-full text-center">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary mb-md mx-auto max-w-sm">Elevate your space with handmade craft</h2>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-on-primary-container transition-colors shadow-sm">
+                    Shop Collections
+                </button>
+</div>
+</section>
+<!-- Featured Artists (Horizontal Scroll) -->
+<section class="py-lg bg-surface-container-low pl-margin-mobile">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md">Featured Artists</h3>
+<div class="flex overflow-x-auto hide-scrollbar gap-gutter pr-margin-mobile pb-sm snap-x">
+<!-- Artist 1 -->
+<div class="flex flex-col items-center flex-shrink-0 snap-start w-24">
+<div class="w-20 h-20 rounded-full overflow-hidden mb-sm border border-outline-variant/30 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A close-up portrait of a female ceramic artist with messy hair in a minimalist white studio, wearing a canvas apron slightly dusted with clay. She is looking thoughtfully off-camera. The lighting is soft and natural, emphasizing a warm taupe and creamy aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiuZJfv8jvhEXq_NleI-hoahe-Duy-OzDU_0ta9FfNJKker0aCBODe-hhfwt7P9fywQ3or_zw0fZhKzAVyNgA-XJapqXfLAvlTf4AHwe5Lmhvm9_QdCKX0gRMjDvfDoEeknxaPhme7yJ8QLw1ggLB4QrUf5JvvqxfrOlcXLwD6WfR4YjnvhEMOR-rtKQvhYe9rT47BT0Rs-xmHEwUFSob9lY1Gq3_M70KN1YOKvYv31cmySJw83MOfag"/>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant text-center leading-tight">Elena<br/>Rostova</span>
+</div>
+<!-- Artist 2 -->
+<div class="flex flex-col items-center flex-shrink-0 snap-start w-24">
+<div class="w-20 h-20 rounded-full overflow-hidden mb-sm border border-outline-variant/30 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A portrait of a male ceramicist with a short beard, smiling gently in a sunlit pottery studio filled with raw clay vases. He wears a simple linen shirt. The color palette is earthy, with soft muted tones of taupe and warm grey, reflecting a calm artisanal environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrvwVhqnMjcotZwFrz6oG4Q988Iq30H49mtxHM5CMAks92oZ5NHtTGFytyHvsoF1ZRFkh0hVkLp1qypOi6jf8XO1trQyXcxvbySP8Psg70rLt_TH1HHvlGd8LphOdIt4FbEbmONCsthcET18DhKZsnG3CmHqhznvK1wYSo0GZiQac9OIStI79rIm_nT9MLuj5opVmPxXIGftGXYobZaSqSvy3JinY37uC2LOwWmAesW46TSSNRuwD-Mw"/>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant text-center leading-tight">Marcus<br/>Chen</span>
+</div>
+<!-- Artist 3 -->
+<div class="flex flex-col items-center flex-shrink-0 snap-start w-24">
+<div class="w-20 h-20 rounded-full overflow-hidden mb-sm border border-outline-variant/30 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="An artistic portrait of a ceramic artist hands holding a beautifully glazed bowl, focusing on the texture of the skin and the ceramic surface. The background is a blurred soft cream studio wall. The lighting is bright and airy, creating a minimalist, tactile mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmUxNuocHuv4U836MHMgeza_583kTBa2SM1-CTJXjei8VVyo1hslo-56Td84vdjeDuutcdXH_riE7hI6B-Ey8iT6Gp0bF8WLM2vk6sT7mtJOm8XXp8_rlnFuhBzavmJmSZsysD9ZeRcwC3Kwar_KRO08u49o-Ux1fxTeWjztbkQTkT9-Bip5_9xL9Sju7zwY_AaqY57IWIUst1XPfnc-L6kwm55Foi88HN7ByvmGRXRv_fGTZQ5LsUgw"/>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant text-center leading-tight">Studio<br/>Aura</span>
+</div>
+<!-- Artist 4 -->
+<div class="flex flex-col items-center flex-shrink-0 snap-start w-24">
+<div class="w-20 h-20 rounded-full overflow-hidden mb-sm border border-outline-variant/30 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A candid shot of a potter in an apron leaning against a wooden workbench covered in tools and dry clay dust. The setting is a bright, minimalist studio with warm sunlight casting soft shadows. The overall tone is grounded, serene, and deeply artisanal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJJ59gEDX0ji4M7xrVZHaAKaZkSSARusmc6Qs0LQRB3Obl-pbWYc7OjHsHlFAh2-mr9ZJUhGvhdbiey3QdcR8ToXOD__AuDU3GkMsMqBNVylR12WtCv6cbgoUtrW5AygbJ6JG3CU0xFfF7dSq2cfN57jts83DKYysRMqK9oTZasa9l2lzsugiExMNM5daTv0NW90xhhyMswQXuA6hDPHdzOjTuhzWniwbZePyJ2HPXZ31_A7348O3SsQ"/>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant text-center leading-tight">Lina<br/>Faye</span>
+</div>
+</div>
+</section>
+<!-- New Arrivals Grid -->
+<section class="py-lg px-margin-mobile">
+<div class="flex justify-between items-baseline mb-md">
+<h3 class="font-headline-md text-headline-md text-on-surface">New Arrivals</h3>
+<a class="font-label-md text-label-md text-primary hover:text-on-primary-container" href="#">View All</a>
+</div>
+<div class="grid grid-cols-2 gap-x-sm gap-y-md">
+<!-- Product Card 1 -->
+<div class="group flex flex-col">
+<div class="relative w-full pt-[120%] rounded-[16px] overflow-hidden mb-sm bg-surface-container shadow-sm border border-outline-variant/20 group-hover:shadow-[0_8px_24px_rgba(30,27,24,0.04)] transition-shadow duration-300">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A minimalist, sculptural ceramic vase in a warm speckled beige glaze, standing on a clean white plinth against a soft cream background. The lighting highlights the subtle organic texture and curved silhouette of the handmade piece. High-end product photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVnIYDlVIECY5j7be7JnIFHZowcaCxj8ohOgRrY0rHwvrJqL3x-Y61bp1aQFNG4R8EGxPZFLUXdn6adNp5Xsgx4tq2Yrai-eNqzq9m9AVJlLj-JZY0dvWmkLJghVRUdfmIvziuUf-7oIQ3VJmalIb-82hBVQOJEVD_bhCYquKq86-ChUR5P_NiCp1E_WWPfnF1EyFnLzhK9reWcPD53sDhvVCHp81XguJZhUep0y18pjstXgiGqALaMw"/>
+<button class="absolute top-2 right-2 p-1.5 bg-surface/80 backdrop-blur-sm rounded-full text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="text-center">
+<h4 class="font-headline-md text-headline-md text-[18px] text-on-surface mb-xs truncate">Dune Sculptural Vase</h4>
+<p class="font-label-md text-label-md text-on-surface-variant mb-xs">Elena Rostova</p>
+<p class="font-body-md text-body-md text-on-surface">$185</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group flex flex-col">
+<div class="relative w-full pt-[120%] rounded-[16px] overflow-hidden mb-sm bg-surface-container shadow-sm border border-outline-variant/20 group-hover:shadow-[0_8px_24px_rgba(30,27,24,0.04)] transition-shadow duration-300">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A set of two handmade ceramic espresso mugs in a matte charcoal finish with raw clay bases, resting on a light oak wooden table. The composition is clean and minimalist, lit by soft morning sunlight that creates gentle shadows, evoking a slow-living aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK6Mq-qFYRGuxdfuwuFowk7nmSaev5vfwjJodybS07H1x3KaDwKdZ-2kH7MtPjfKQxPPP0ymnRQkXJ4jCcm_tC7ZRB9lck2dME_wJIYZNqmI1gr-Csg0wS2HHxl9omsj1xoqxWS98Ud5Rdu_SVZPBLSItFbXb37fpenYvXTnorYlCwKkysSJsHpr47cAKK4n_dkNLy4669xaQEPoRKVY9pYw3EpvgAiLSXlcRKgEDjIJ1evF2V6PjgCQ"/>
+<button class="absolute top-2 right-2 p-1.5 bg-surface/80 backdrop-blur-sm rounded-full text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="text-center">
+<h4 class="font-headline-md text-headline-md text-[18px] text-on-surface mb-xs truncate">Charcoal Espresso Set</h4>
+<p class="font-label-md text-label-md text-on-surface-variant mb-xs">Studio Aura</p>
+<p class="font-body-md text-body-md text-on-surface">$65</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group flex flex-col">
+<div class="relative w-full pt-[120%] rounded-[16px] overflow-hidden mb-sm bg-surface-container shadow-sm border border-outline-variant/20 group-hover:shadow-[0_8px_24px_rgba(30,27,24,0.04)] transition-shadow duration-300">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A wide, shallow ceramic bowl with a milky white crackle glaze interior and a rough textured terracotta exterior. The bowl is empty and placed centrally on a smooth, muted taupe surface, beautifully lit to show the contrast in textures. Elegant and simple." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDImpe-OYZYiPxeDhfVjD1j6p6CGpIYFeks05Qok0Xvuqu021-Ezi1qNP_qINxJKKV5irmW7URH3o6DGJ_QuALwLbGLLmkJGYuejnsgc9hlGd5V3SBKcQi3S7t_1Ddx-vZMPbi5rQ0KYXbI3hJJ1GNAlXvt7FcQf_NBz-ezIFytZ6yjJo7dcHDkl75DYjOmn_cjYY0nAU8gZSXrerJ8hupNFrcNS0E410DVTMcr2QxRsfE5_DvtRxtseA"/>
+<button class="absolute top-2 right-2 p-1.5 bg-surface/80 backdrop-blur-sm rounded-full text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="text-center">
+<h4 class="font-headline-md text-headline-md text-[18px] text-on-surface mb-xs truncate">Crackle Glaze Bowl</h4>
+<p class="font-label-md text-label-md text-on-surface-variant mb-xs">Marcus Chen</p>
+<p class="font-body-md text-body-md text-on-surface">$120</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group flex flex-col">
+<div class="relative w-full pt-[120%] rounded-[16px] overflow-hidden mb-sm bg-surface-container shadow-sm border border-outline-variant/20 group-hover:shadow-[0_8px_24px_rgba(30,27,24,0.04)] transition-shadow duration-300">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A tall, slender water pitcher made of raw, unglazed stoneware in a soft warm grey color. It stands alone on a minimal plaster backdrop. The styling is highly refined and gallery-like, emphasizing the purity of the material and the minimalist silhouette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8XnNWkEVlQmCJyva69y7p5p56ARaYDHJCP4IC72EP-vaxSrrEoCuFNlCdy-3awcsUWXqdmaIZOMCqXwezPgwktx3tJsuCfblRX75vSM4hRMyrrYaByOCwwFOVMEy45ej0taFDUCtXHFe_BSaGwNNJ-C3CcvLq9rYrAN8-StJjwfC2AcOdfoLQDkdYfseZWhfE3KftKLf01yOAzywAZ--pPYXLxdxPCq1bvVjnV68KnR8kNc9bXg1TJQ"/>
+<button class="absolute top-2 right-2 p-1.5 bg-surface/80 backdrop-blur-sm rounded-full text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="text-center">
+<h4 class="font-headline-md text-headline-md text-[18px] text-on-surface mb-xs truncate">Stoneware Pitcher</h4>
+<p class="font-label-md text-label-md text-on-surface-variant mb-xs">Lina Faye</p>
+<p class="font-body-md text-body-md text-on-surface">$145</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Studio Stories -->
+<section class="py-lg px-margin-mobile bg-surface-container-highest mt-md">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md">Studio Stories</h3>
+<article class="bg-surface rounded-xl overflow-hidden shadow-sm border border-outline-variant/20 flex flex-col">
+<div class="w-full h-48 relative">
+<img class="w-full h-full object-cover" data-alt="Close-up photograph of a potter's hands gently supporting the walls of a wet clay cylinder on a spinning wheel. The wet clay glistens slightly. The background is softly blurred, showing hints of a wooden workbench and pottery tools in a warm, sunlit studio. High-end, artisanal documentary style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI5NJhiLzURHI3LiqEDbw37owqrJBJjKCXulTPKgAIaLJ6SU_KogofmEi-kKpcFzB_4Mw5GJRmPgPcww286NDN8FsuaJlKA8Fuw5uW4YzxP5qqkTMydUTsLR_6Zj-nbmri7qEKLestgChQpFt54dU_H4j0FAX7cFFcnmLYpjB0W_OhU2J05Be3M9VzIPdnJRNyOq-s1VIJkYp4oGnP6LdrNghrLvOOXyLaJrSvFBb_wlU_Mdkhb8N4Dw"/>
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-3 py-1 rounded-full">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider text-[10px]">Process</span>
+</div>
+</div>
+<div class="p-md">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-sm">The Art of Centering</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-md">
+                        Before a vessel can take shape, the clay must find its perfect center. It's a foundational practice that requires patience, strength, and an intuitive connection with the earth.
+                    </p>
+<a class="inline-flex items-center text-primary font-label-md text-label-md hover:text-on-primary-container transition-colors" href="#">
+                        Read Story <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-surface dark:bg-surface text-primary dark:text-primary-fixed-dim font-label-md text-label-md fixed bottom-0 w-full z-50 bg-surface dark:bg-surface border-t border-outline-variant/20 shadow-sm fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe md:hidden">
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-on-secondary-fixed-variant text-on-secondary-container dark:text-secondary-fixed rounded-full px-4 py-1 hover:text-primary dark:hover:text-primary-fixed transition-colors scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span>Studio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-secondary-fixed-dim px-4 py-1 hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">storefront</span>
+<span>Market</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-secondary-fixed-dim px-4 py-1 hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">search</span>
+<span>Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-secondary-fixed-dim px-4 py-1 hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span>Profile</span>
+</a>
+</nav>
+</body></html>
