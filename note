@@ -1,0 +1,3 @@
+filename : index.html
+settings --> Pages --> Build & deployment (choose github actions) --> Static Html (configure) -->  static.yml --> commit changes --> click on actions --> create static.yml 
+settings --> pages --> visit site
